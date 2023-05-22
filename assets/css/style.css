@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.container {
+    width: 90%;
+    background-color: aliceblue;
+}
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(219, 234, 247);
+    margin: 50px auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.cell {
+    width: 20%;
+    border: 1px solid black;
+}
+
+/* Code CSS pour le tableau responsive */
+.table-responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Code CSS pour aligner les en-têtes avec les colonnes du tableau */
+.table th,
+.table td {
+    width: 14%;
+}
+
+@media (max-width: 600px) {
+.cell {
+    width: 100%;
+}
+}
+
+
